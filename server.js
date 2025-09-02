@@ -17,9 +17,9 @@ mongoose.connect('mongodb://localhost:27017/techEvangelism', {
   .catch(err => console.error('MongoDB connection error:', err));
 
 app.get('/', (req, res) => {
-  res.send('Willkommen bei Tech Evangelism Germany!');
+  res.send('Welcome to Tech Evangelism Germany!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Server läuft auf Port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

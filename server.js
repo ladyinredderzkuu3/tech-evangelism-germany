@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const mongoURI = 'mongodb://localhost:27017/techEvangelism';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/techEvangelism';
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
